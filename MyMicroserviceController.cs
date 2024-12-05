@@ -1,12 +1,12 @@
-using BHF.MS.MyMicroservice.Models;
-using BHF.MS.MyMicroservice.Services;
+using BHF.MS.sachin.Models;
+using BHF.MS.sachin.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BHF.MS.MyMicroservice.Controllers
+namespace BHF.MS.sachin.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MyMicroserviceController(ILogger<MyMicroserviceController> logger, IExampleService service) : ControllerBase
+    public class sachinController(ILogger<sachinController> logger, IExampleService service) : ControllerBase
     {
         [HttpGet]
         [ResponseCache(VaryByQueryKeys = ["*"], Duration = 60)]
